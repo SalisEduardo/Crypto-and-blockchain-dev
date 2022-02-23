@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: MIT
 pragma solidity 0.8.12;
 
-// codigo presente no livro "Ethereum Projects for Beginners Build blockchain based cryptocurrencies smart contracts and DApps "
+// code develvoped from "Ethereum Projects for Beginners Build blockchain based cryptocurrencies smart contracts and DApps "
 
 import "./ConvertLib.sol";
 
 contract MetaCoin{
     mapping (address => uint) balances;
 
-    event Transfer(address indexed _from, address indexed _to, uint _value); //ainda nao entendi o conceito de event
+    event Transfer(address indexed _from, address indexed _to, uint _value); //event still confuse
 
     function metaCoin() public {
         balances[tx.origin] = 1000;
